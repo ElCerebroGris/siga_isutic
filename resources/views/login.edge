@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Siga-Isutic-> Login</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <!-- Bootstrap 3.3.7 -->
+  {{style('/template/bootstrap/css/bootstrap.min.css')}}
+  <!-- Font Awesome -->
+  {{style('/template/bootstrap/css/font-awesome.min.css')}}
+  <!-- Theme style -->
+  {{style('/template/dist/css/AdminLTE.min.css')}}  
+  <style type="text/css">
+    
+    .form-control , #btn{
+         border-radius: 5px;
+    }
+
+  </style>
+
+</head>
+<body class="hold-transition ">
+    <div class="login-box">
+        <div class="login-logo">
+            <h2>SIGA-ISUTIC</h2>
+        </div>
+        <!-- /.login-logo -->
+        <div class="login-box-body">
+            <form action="/autentica_usuario" method="POST">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control rounded-circle" placeholder="Usuario" name="nome">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <br>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" placeholder="Password" name="senha">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="submit" id="btn" class="btn btn-primary btn-block btn-flat" value="Login">
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+
+        </div>
+        <!-- /.login-box-body -->
+    </div>
+    <!-- /.login-box -->
+
+<!-- jQuery 3 -->
+{{script('/template/jquery/jquery.min.js')}}
+<!-- Bootstrap 3.3.7 -->
+{{script('/template/bootstrap/js/bootstrap.min.js')}}
+</body>
+</html>

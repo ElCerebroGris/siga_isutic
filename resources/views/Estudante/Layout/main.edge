@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    {{style('/template/bootstrap/css/bootstrap.min.css')}}
+     <!-- DataTables -->
+     {{style('/template/datatables.net-bs/css/dataTables.bootstrap.min.css')}}
+    <!-- Font Awesome -->
+    {{style('/template/font-awesome/css/font-awesome.min.css')}}
+    <!-- Theme style -->
+    {{style('/template/dist/css/AdminLTE.min.css')}}
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+    folder instead of downloading all of them to reduce the load. -->
+    {{style('/template/dist/css/skins/_all-skins.min.css')}}
+
+     <style>
+    .example-modal .modal {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      display: block;
+      z-index: 1;
+    }
+
+    .example-modal .modal {
+      background: transparent !important;
+    }
+  </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    @include('Estudante/Layout/header')
+    @include('Estudante/Layout/aside')
+    @include('Estudante/perfil')
+    @include('Estudante/Layout/footer')
+        
+           
+
+         
